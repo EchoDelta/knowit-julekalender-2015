@@ -13,11 +13,6 @@ for(var ar = 1; ar < 2016; ar++){
     fredager++;
   }
 
-  if(erSkuddar){
-    antalldager += 365;  
-  }
-  else {
-    antalldager += 366;
-  }
+  antalldager += erSkuddar ? 366 : 365;
 }
 console.log(fredager);
